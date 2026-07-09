@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZERORISKBYRISHI 💸</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:linear-gradient(135deg,#050505,#120000,#240000);
+overflow:hidden;
+color:#fff;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:450px;
+height:450px;
+background:#ff000055;
+filter:blur(130px);
+top:-120px;
+left:-120px;
+animation:move1 8s infinite alternate;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:450px;
+height:450px;
+background:#ff550033;
+filter:blur(130px);
+right:-120px;
+bottom:-120px;
+animation:move2 8s infinite alternate;
+}
+
+@keyframes move1{
+to{transform:translate(80px,50px);}
+}
+
+@keyframes move2{
+to{transform:translate(-80px,-50px);}
+}
+
+.card{
+width:92%;
+max-width:430px;
+background:#0d111c;
+border:2px solid #ff2222;
+border-radius:30px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 40px rgba(255,0,0,.35);
+position:relative;
+z-index:2;
+}
+
+.logo{
+width:170px;
+height:170px;
+margin:auto;
+border-radius:50%;
+padding:5px;
+background:linear-gradient(45deg,#ff0000,#ff8800,#ff0000);
+animation:spin 6s linear infinite;
+}
+
+.logo img{
+width:100%;
+height:100%;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #0d111c;
+}
+
+@keyframes spin{
+100%{
+filter:hue-rotate(360deg);
+}
+}
+
+h1{
+margin:20px 0 10px;
+font-size:34px;
+font-weight:800;
+color:#ff4040;
+}
+
+p{
+color:#ddd;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.button{
+display:block;
+background:#ff1111;
+color:#fff;
+padding:18px;
+border-radius:15px;
+text-decoration:none;
+font-size:20px;
+font-weight:700;
+transition:.3s;
+box-shadow:0 0 20px rgba(255,0,0,.5);
+}
+
+.button:hover{
+transform:scale(1.03);
+background:#ff3333;
+}
+
+.timer{
+margin-top:18px;
+font-size:18px;
+font-weight:bold;
+color:#ff6666;
+}
+
+.footer{
+margin-top:25px;
+font-size:14px;
+color:#bbb;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<div class="logo">
+<img src="https://i.ibb.co/rGKzQdkr/IMG-20260709-183419-666.jpg">
+</div>
+
+<h1>ZERORISKBYRISHI 💸</h1>
+
+<p>
+📈 Join our Official Telegram Community<br><br>
+
+✅ Daily Premium Signals<br>
+✅ VIP Trading Tips<br>
+✅ Live Market Updates<br>
+✅ Free Trading Guidance
+</p>
+
+<a class="button" href="https://t.me/+7ZXYmrZOLesyMTFl">
+🚀 JOIN TELEGRAM NOW
+</a>
+
+<div class="timer" id="timer">
+Redirecting in 2 seconds...
+</div>
+
+<div class="footer">
+💸 ZERORISKBYRISHI VIP 💸
+</div>
+
+</div>
+
+<script>
+let sec=2;
+
+const timer=document.getElementById("timer");
+
+const x=setInterval(function(){
+
+sec--;
+
+timer.innerHTML="Redirecting in "+sec+" seconds...";
+
+if(sec<=0){
+
+clearInterval(x);
+
+window.location.href="https://t.me/+7ZXYmrZesyMTFl";
+
+}
+
+},1000);
+</script>
+
+</body>
+</html>
