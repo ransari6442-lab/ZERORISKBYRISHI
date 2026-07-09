@@ -137,6 +137,22 @@ margin-top:25px;
 font-size:14px;
 color:#bbb;
 }
+
+@media(max-width:480px){
+.card{
+padding:22px;
+}
+.logo{
+width:140px;
+height:140px;
+}
+h1{
+font-size:28px;
+}
+.button{
+font-size:18px;
+}
+}
 </style>
 
 </head>
@@ -145,7 +161,7 @@ color:#bbb;
 <div class="card">
 
 <div class="logo">
-<img src="https://i.ibb.co/rGKzQdkr/IMG-20260709-183419-666.jpg">
+<img src="https://i.ibb.co/rGKzQdkr/IMG-20260709-183419-666.jpg" alt="ZERORISKBYRISHI">
 </div>
 
 <h1>ZERORISKBYRISHI 💸</h1>
@@ -159,12 +175,12 @@ color:#bbb;
 ✅ Free Trading Guidance
 </p>
 
-<a class="button" href="https://t.me/+7ZXYmrZOLesyMTFl">
+<a class="button" href="https://t.me/+uuuCtNjesyljNDBl">
 🚀 JOIN TELEGRAM NOW
 </a>
 
 <div class="timer" id="timer">
-Redirecting in 2 seconds...
+Redirecting in 20 seconds...
 </div>
 
 <div class="footer">
@@ -174,23 +190,23 @@ Redirecting in 2 seconds...
 </div>
 
 <script>
-let sec=2;
+let sec = 20;
 
-const timer=document.getElementById("timer");
+const timer = document.getElementById("timer");
 
-const x=setInterval(function(){
+const countdown = setInterval(function(){
 
-sec--;
+    sec--;
 
-timer.innerHTML="Redirecting in "+sec+" seconds...";
+    timer.innerHTML = "Redirecting in " + sec + " seconds...";
 
-if(sec<=0){
+    if(sec <= 0){
 
-clearInterval(x);
+        clearInterval(countdown);
 
-window.location.href="https://t.me/+7ZXYmrZesyMTFl";
+        window.location.href = "https://t.me/+uuuCtNjesyljNDBl";
 
-}
+    }
 
 },1000);
 </script>
